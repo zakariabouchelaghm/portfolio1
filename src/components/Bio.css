@@ -1,0 +1,33 @@
+.bio-section {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.bio-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.bio-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.bio-text strong {
+    color: #fff;
+    font-weight: 600;
+}
