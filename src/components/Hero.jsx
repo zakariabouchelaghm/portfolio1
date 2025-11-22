@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="hero-content">
                 <div className="image-container">
                     <div className="image-wrapper">
-                        <img src="/me.jpeg" alt="AI Engineer" className="profile-image" />
+                        <img src="me.jpeg" alt="AI Engineer" className="profile-image" />
                     </div>
                     <div className="image-glow"></div>
                 </div>
