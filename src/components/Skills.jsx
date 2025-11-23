@@ -29,7 +29,7 @@ const Skills = () => {
                 <h4>Tools & Frameworks</h4>
                 <div className="skills-grid">
                     {skills.tools.map((tool) => (
-                        <div key={tool} className="skill-item tool-item">{tool}</div>
+                        <div key={tool} className="skill-item language-item">{tool}</div>
                     ))}
                 </div>
             </div>
