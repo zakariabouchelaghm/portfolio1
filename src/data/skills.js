@@ -9,11 +9,18 @@ export const skills = {
         "Multi Agent Systems",
         "Multi AI Agent Systems"
     ],
+    languages: [
+        "Python",
+        "Java",
+        "C",
+        "SQL"
+    ],
     tools: [
-        "Scikit Learn",
-        "Pytorch",
-        "Pytorch-Geometric",
-        "Tensorflow",
-        "CrewAI"
+        "Scikit-learn",
+        "PyTorch",
+        "PyTorch-Geometric",
+        "TensorFlow",
+        "CrewAI",
+        "PostgreSQL"
     ]
 };
