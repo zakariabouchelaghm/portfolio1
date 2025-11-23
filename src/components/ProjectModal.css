@@ -79,4 +79,25 @@
     color: #ddd;
     line-height: 1.8;
     font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.project-link-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 243, 255, 0.3);
+    margin-top: 10px;
+}
+
+.project-link-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 243, 255, 0.5);
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
 }
