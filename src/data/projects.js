@@ -3,7 +3,7 @@ export const featuredProjects = [
         id: 1,
         title: "7orouf w Ar9am",
         shortDescription: "AI-powered Android application that teaches kids numbers and letters.",
-        fullDescription: "7orouf w Ar9am (Numbers and Letters) is an educative AI-powered Android application that teaches children to write numbers and Arabic characters. It features interactive activities like 'Listen and Write', where the app prompts for a specific character. The child draws on a digital canvas, and a Deep Learning model processes the input in real-time to detect the character. The app provides immediate feedback, confirming if the drawn character matches the prompt, making learning engaging and effective.",
+        fullDescription: "An AI-powered Android application designed to teach Arabic characters and numbers. It utilizes Deep Learning for real-time handwriting recognition, providing immediate feedback through interactive exercises to enhance learning outcomes.",
         tags: ["Computer Vision", "Deep Learning", "Android", "App"],
         link: "https://github.com/zakariabouchelaghm/7orouf_wa_Ar9am"
     },
@@ -17,7 +17,7 @@ export const featuredProjects = [
     },
     {
         id: 3,
-        title: "Goûte de sang",
+        title: "Goûte de Sang",
         shortDescription: "A mobile app for blood donators.",
         fullDescription: "Goûte de sang is a mobile application designed to facilitate blood donation. It connects donors with those in need and blood banks, streamlining the donation process and helping to save lives. The app provides a user-friendly interface for scheduling donations and tracking history.",
         tags: ["Android", "App", "Mobile Development"],
