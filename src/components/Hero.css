@@ -3,11 +3,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px 20px;
+    padding: 60px 20px 40px;
     position: relative;
-    /* For absolute positioning of scroll indicator if needed, though flex is used */
     min-height: 90vh;
-    /* Ensure hero takes up most of the screen */
     flex-direction: column;
 }
 
@@ -121,7 +119,7 @@
 }
 
 .scroll-indicator {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
