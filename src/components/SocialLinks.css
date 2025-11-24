@@ -20,7 +20,11 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; Removed to allow tooltip to be visible outside */
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    padding: 0;
 }
 
 .social-icon::before {
@@ -30,12 +34,22 @@
     background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1));
     opacity: 0;
     transition: opacity 0.3s ease;
+    border-radius: 12px;
 }
 
 .social-icon:hover {
     transform: translateY(-5px) scale(1.05);
     border-color: currentColor;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove focus outline and fix active state */
+.social-icon:focus {
+    outline: none;
+}
+
+.social-icon:active {
+    transform: translateY(-2px) scale(1.02);
 }
 
 .social-icon:hover::before {
@@ -56,6 +70,36 @@
 .social-icon.email:hover {
     color: #EA4335;
     background: rgba(234, 67, 53, 0.1);
+}
+
+.social-icon.email.copied {
+    color: #4CAF50;
+    background: rgba(76, 175, 80, 0.1);
+    border-color: #4CAF50;
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.social-icon:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Animation for icons */

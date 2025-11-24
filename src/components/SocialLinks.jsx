@@ -1,9 +1,31 @@
-import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
+import React, { useState } from 'react';
+import { FaLinkedin, FaGithub, FaCheck } from 'react-icons/fa';
+import { MdEmail, MdContentCopy } from 'react-icons/md';
 import './SocialLinks.css';
 
 const SocialLinks = () => {
+    const [copied, setCopied] = useState(false);
+
+    const handleClick = (e) => {
+        // Remove focus after clicking to prevent persistent active state
+        const target = e.currentTarget;
+        setTimeout(() => {
+            target.blur();
+        }, 100);
+    };
+
+    const handleEmailClick = (e) => {
+        e.preventDefault();
+        handleClick(e);
+
+        navigator.clipboard.writeText('zakariabouchelaghm20@gmail.com');
+        setCopied(true);
+
+        setTimeout(() => {
+            setCopied(false);
+        }, 2000);
+    };
+
     return (
         <div className="social-links-hero">
             <a
@@ -12,6 +34,7 @@ const SocialLinks = () => {
                 rel="noopener noreferrer"
                 className="social-icon linkedin"
                 aria-label="LinkedIn Profile"
+                onClick={handleClick}
             >
                 <FaLinkedin />
             </a>
@@ -21,18 +44,19 @@ const SocialLinks = () => {
                 rel="noopener noreferrer"
                 className="social-icon github"
                 aria-label="GitHub Profile"
+                onClick={handleClick}
             >
                 <FaGithub />
             </a>
-            <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=zakariabouchelaghem20@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon email"
-                aria-label="Email Contact"
+            <button
+                className={`social-icon email ${copied ? 'copied' : ''}`}
+                aria-label="Copy Email Address"
+                onClick={handleEmailClick}
+                title="Copy email to clipboard"
             >
-                <MdEmail />
-            </a>
+                {copied ? <FaCheck /> : <MdEmail />}
+                <span className="tooltip">{copied ? 'Copied!' : 'Copy Email'}</span>
+            </button>
         </div>
     );
 };
