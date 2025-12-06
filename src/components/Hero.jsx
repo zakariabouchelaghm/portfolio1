@@ -13,7 +13,7 @@ const Hero = () => {
                     <div className="image-glow"></div>
                 </div>
                 <h1 className="name">Zakaria Bouchelaghem</h1>
-                <h2 className="title">AI Engineer</h2>
+                <h2 className="title">AI/ML Engineer</h2>
                 <p className="tagline">Building the future with Intelligence.</p>
                 <SocialLinks />
                 <div className="scroll-indicator">
