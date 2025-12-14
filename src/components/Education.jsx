@@ -5,7 +5,7 @@ import './Education.css';
 const Education = () => {
     return (
         <section className="education-section">
-            <h3 className="section-title">Formation</h3>
+            <h3 className="section-title">Education</h3>
             <div className="timeline">
                 {education.map((edu, index) => (
                     <div key={edu.id} className="timeline-item">
