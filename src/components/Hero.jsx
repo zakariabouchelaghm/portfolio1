@@ -14,7 +14,7 @@ const Hero = () => {
                 </div>
                 <h1 className="name">Zakaria Bouchelaghem</h1>
                 <h2 className="title">AI/ML Engineer</h2>
-                <p className="tagline">Building the future with Intelligence.</p>
+                <p className="tagline">Building the future with Intelligence</p>
                 <SocialLinks />
                 <div className="scroll-indicator">
                     <span></span>
