@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8" />
     <title>Redirecting…</title>
 
-    <!-- Force HTTPS -->
     <meta http-equiv="refresh" content="0; url=https://zakariabouchelaghm.github.io/portfolio1/" />
 
-    <!-- Fallback for some browsers -->
     <script>
-        window.location.replace("https://zakariabouchelaghm.github.io/portfolio1/");
+        if (location.protocol !== 'https:') {
+            location.replace('https://' + location.host + location.pathname);
+        }
     </script>
 </head>
 
 <body>
-    <p>Redirecting to secure site…</p>
+    Redirecting…
 </body>
 
 </html>
