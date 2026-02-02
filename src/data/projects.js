@@ -30,6 +30,14 @@ export const featuredProjects = [
         fullDescription: "DOC IT is an Android application that simplifies the process of finding medical professionals. Users can search for doctors by specialty, location, and availability, making healthcare access more convenient and efficient.",
         tags: ["Android", "App", "Healthcare"],
         link: "https://drive.google.com/drive/folders/1F2j0HVucKS7NfEhm9aFxpJr-EeY6vjTk?usp=sharing"
+    },
+    {
+        id: 5,
+        title: "SmartMemo",
+        shortDescription: "An AI Desktop app for note taking and smart queries.",
+        fullDescription: "SmartMemo is a Desktop application that simplifies the process of taking notes and querying them. Users can search for notes semantically using AI without the need for specific keywords.",
+        tags: ["Desktop", "App", "Note Taking"],
+        link: "https://github.com/zakariabouchelaghm/SmartMemo"
     }
 ];
 
