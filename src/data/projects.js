@@ -37,7 +37,7 @@ export const featuredProjects = [
         shortDescription: "An AI Desktop app for note taking and smart queries.",
         fullDescription: "SmartMemo is a Desktop application that simplifies the process of taking notes and querying them. Users can search for notes semantically using AI without the need for specific keywords.",
         tags: ["Desktop", "App", "Note Taking"],
-        link: "https://github.com/zakariabouchelaghm/SmartMemo"
+        link: "https://smartmemo-1c04.onrender.com/"
     }
 ];
 
