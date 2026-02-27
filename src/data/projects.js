@@ -4,7 +4,7 @@ export const featuredProjects = [
         title: "7orouf w Ar9am",
         shortDescription: "AI-powered Android application that teaches kids numbers and letters.",
         fullDescription: "An AI-powered Android application designed to teach Arabic characters and numbers. It utilizes Deep Learning for real-time handwriting recognition, providing immediate feedback through interactive exercises to enhance learning outcomes.",
-        tags: ["Computer Vision", "Deep Learning", "Android", "App"],
+        tags: ["Computer Vision", "Deep Learning", "Android", "App", "Educative", "Children"],
         link: "https://github.com/zakariabouchelaghm/7orouf_wa_Ar9am"
     },
     {
@@ -38,6 +38,14 @@ export const featuredProjects = [
         fullDescription: "SmartMemo is a Desktop application that simplifies the process of taking notes and querying them. Users can search for notes semantically using AI without the need for specific keywords.",
         tags: ["Desktop", "App", "Note Taking"],
         link: "https://smartmemo-1c04.onrender.com/"
+    },
+    {
+        id: 6,
+        title: "Hand Count AI",
+        shortDescription: "An AI Desktop app for teaching children Counting with their hands using AI.",
+        fullDescription: "Hand Count AI is a Desktop application that teaches children counting numbers from 1 to 10 in an interactive and a new way, using a camera an AI as a guide.",
+        tags: ["Computer Vision", "Deep Learning", "Android", "App", "Educative", "Children"],
+        link: "https://github.com/zakariabouchelaghm/hand_count_app"
     }
 ];
 
