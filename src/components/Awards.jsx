@@ -1,13 +1,14 @@
 import React from 'react';
-import { awards } from '../data/awards';
 import './Awards.css';
+import { useLanguage } from '../context/LanguageContext';
 
 const Awards = () => {
+    const { t } = useLanguage();
     return (
         <section className="awards-section">
-            <h3 className="section-title">Notable Awards</h3>
+            <h3 className="section-title">{t.awardsTitle}</h3>
             <div className="awards-container">
-                {awards.map((award) => (
+                {t.awards.map((award) => (
                     <div key={award.id} className="award-card">
                         <div className="award-header">
                             <h4 className="award-title">{award.title}</h4>

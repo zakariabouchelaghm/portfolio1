@@ -1,13 +1,14 @@
 import React from 'react';
-import { experience } from '../data/experience';
 import './Experience.css';
+import { useLanguage } from '../context/LanguageContext';
 
 const Experience = () => {
+    const { t } = useLanguage();
     return (
         <section className="experience-section">
-            <h3 className="section-title">Experience & Certifications</h3>
+            <h3 className="section-title">{t.experienceTitle}</h3>
             <div className="experience-container">
-                {experience.map((exp) => (
+                {t.experience.map((exp) => (
                     <div key={exp.id} className="experience-card">
                         <div className="exp-header">
                             <h4 className="exp-role">{exp.role}</h4>

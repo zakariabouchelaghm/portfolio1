@@ -1,0 +1,44 @@
+.lang-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(10, 10, 10, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(184, 164, 106, 0.4);
+    border-radius: 30px;
+    padding: 7px 16px;
+    cursor: pointer;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: rgba(224, 224, 224, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.lang-toggle:hover {
+    border-color: rgba(212, 175, 55, 0.7);
+    background: rgba(10, 10, 10, 0.9);
+    box-shadow: 0 4px 24px rgba(184, 164, 106, 0.2);
+}
+
+.lang-option {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    padding: 0 2px;
+}
+
+.lang-option.active {
+    color: #B8A46A;
+    text-shadow: 0 0 10px rgba(184, 164, 106, 0.5);
+}
+
+.lang-divider {
+    color: rgba(255, 255, 255, 0.15);
+    font-weight: 300;
+}

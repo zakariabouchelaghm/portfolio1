@@ -1,13 +1,14 @@
 import React from 'react';
-import { featuredProjects } from '../data/projects';
 import './Projects.css';
+import { useLanguage } from '../context/LanguageContext';
 
 const Projects = ({ openModal }) => {
+    const { t } = useLanguage();
     return (
         <section className="projects-section">
-            <h3 className="section-title">Featured Projects</h3>
+            <h3 className="section-title">{t.featuredProjects}</h3>
             <div className="projects-grid">
-                {featuredProjects.map((project) => (
+                {t.featuredProjectsData.map((project) => (
                     <div
                         key={project.id}
                         className="project-card"
@@ -21,7 +22,7 @@ const Projects = ({ openModal }) => {
                                     <span key={tag} className="tag">{tag}</span>
                                 ))}
                             </div>
-                            <span className="read-more">View Details &rarr;</span>
+                            <span className="read-more">{t.viewDetails}</span>
                         </div>
                     </div>
                 ))}

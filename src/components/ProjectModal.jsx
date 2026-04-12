@@ -1,7 +1,9 @@
 import React from 'react';
 import './ProjectModal.css';
+import { useLanguage } from '../context/LanguageContext';
 
 const ProjectModal = ({ project, onClose }) => {
+    const { t } = useLanguage();
     if (!project) return null;
 
     return (
@@ -22,7 +24,7 @@ const ProjectModal = ({ project, onClose }) => {
                         rel="noopener noreferrer"
                         className="project-link-button"
                     >
-                        View Project →
+                        {t.viewProject}
                     </a>
                 )}
             </div>

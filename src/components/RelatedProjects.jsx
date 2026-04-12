@@ -1,13 +1,14 @@
 import React from 'react';
-import { relatedProjects } from '../data/projects';
-import './Projects.css'; // Reuse existing styles
+import './Projects.css';
+import { useLanguage } from '../context/LanguageContext';
 
 const RelatedProjects = ({ openModal }) => {
+    const { t } = useLanguage();
     return (
         <section className="projects-section related-projects">
-            <h3 className="section-title">Related Projects</h3>
+            <h3 className="section-title">{t.relatedProjects}</h3>
             <div className="projects-grid">
-                {relatedProjects.map((project) => (
+                {t.relatedProjectsData.map((project) => (
                     <div
                         key={project.id}
                         className="project-card"
@@ -21,7 +22,7 @@ const RelatedProjects = ({ openModal }) => {
                                     <span key={tag} className="tag">{tag}</span>
                                 ))}
                             </div>
-                            <span className="read-more">View Details &rarr;</span>
+                            <span className="read-more">{t.viewDetails}</span>
                         </div>
                     </div>
                 ))}

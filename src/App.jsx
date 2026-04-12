@@ -9,6 +9,8 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
+import LanguageToggle from './components/LanguageToggle';
+import { LanguageProvider } from './context/LanguageContext';
 import './App.css';
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
 
   const openModal = (project) => {
     setSelectedProject(project);
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
@@ -25,21 +27,24 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <div className="background-glow"></div>
-      <Hero />
-      <Bio />
-      <Skills />
-      <Education />
-      <Experience />
-      <Projects openModal={openModal} />
-      <RelatedProjects openModal={openModal} />
-      <Awards />
-      <Footer />
-      {selectedProject && (
-        <ProjectModal project={selectedProject} onClose={closeModal} />
-      )}
-    </div>
+    <LanguageProvider>
+      <div className="app-container">
+        <div className="background-glow"></div>
+        <LanguageToggle />
+        <Hero />
+        <Bio />
+        <Skills />
+        <Education />
+        <Experience />
+        <Projects openModal={openModal} />
+        <RelatedProjects openModal={openModal} />
+        <Awards />
+        <Footer />
+        {selectedProject && (
+          <ProjectModal project={selectedProject} onClose={closeModal} />
+        )}
+      </div>
+    </LanguageProvider>
   );
 }
 

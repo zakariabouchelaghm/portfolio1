@@ -1,10 +1,12 @@
 import React from 'react';
 import './Footer.css';
+import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
+    const { t } = useLanguage();
     return (
         <footer className="footer">
-            <p>&copy; {new Date().getFullYear()} Zakaria Bouchelaghem. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Zakaria Bouchelaghem. {t.allRightsReserved}</p>
             <div className="social-links">
                 <a href="https://www.linkedin.com/in/zakaria-bouchelaghem-77a4a6182/">LinkedIn</a>
                 <a href="https://github.com/zakariabouchelaghm">GitHub</a>

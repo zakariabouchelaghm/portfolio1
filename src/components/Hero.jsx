@@ -1,15 +1,17 @@
 import React, { useState, useRef } from 'react';
 import './Hero.css';
 import SocialLinks from './SocialLinks';
+import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
     const [isHovered, setIsHovered] = useState(false);
     const motion2Ref = useRef(null);
+    const { t } = useLanguage();
 
     const handleInteraction = () => {
         setIsHovered(true);
         if (motion2Ref.current) {
-            motion2Ref.current.playbackRate = 1.5; // Increase speed
+            motion2Ref.current.playbackRate = 1.5;
             motion2Ref.current.currentTime = 0;
             motion2Ref.current.play();
         }
@@ -47,7 +49,7 @@ const Hero = () => {
                 </div>
                 <h1 className="name">Zakaria Bouchelaghem</h1>
                 <h2 className="title">AI/ML Engineer</h2>
-                <p className="tagline">Building the future with Intelligence.</p>
+                <p className="tagline">{t.tagline}</p>
                 <SocialLinks />
                 <div className="scroll-indicator">
                     <span></span>
