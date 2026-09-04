@@ -6,8 +6,10 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio-app</title>
-  <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+
+  <script src="https://cdn.botpress.cloud/webchat/v3.7/inject.js"></script>
   <script src="https://files.bpcontent.cloud/2025/12/13/12/20251213124406-1STV0N1N.js" defer></script>
+
 
 
   <script>
@@ -16,6 +18,22 @@
     }
   </script>
 
+  <!-- Botpress styling overrides -->
+  <style>
+    :root {
+      --bp-color-primary: #D4AF37 !important;
+      --bp-bg-primary: #D4AF37 !important;
+    }
+
+    /* Attempt to override standard Botpress V3 and V2 widget button classes */
+    .bpw-widget-btn,
+    .bp-widget-btn,
+    .bp-button,
+    #bp-web-widget-container button {
+      background-color: #D4AF37 !important;
+      background: #D4AF37 !important;
+    }
+  </style>
 
 </head>
 
