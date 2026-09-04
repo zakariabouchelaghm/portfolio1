@@ -46,6 +46,14 @@ export const featuredProjects = [
         fullDescription: "Hand Count AI is a Desktop application that teaches children counting numbers from 1 to 10 in an interactive and a new way, using a camera an AI as a guide.",
         tags: ["Computer Vision", "Deep Learning", "Android", "App", "Educative", "Children"],
         link: "https://github.com/zakariabouchelaghm/hand_count_app"
+    },
+    {
+        id: 7,
+        title: "Rendez-vous facile",
+        shortDescription: "A website to schedule appointments for doctors and clinics.",
+        fullDescription: "Rendez-vous facile is a website that simplifies the process of scheduling appointments for doctors and clinics. Users can search for doctors by specialty, location, and availability, making healthcare access more convenient and efficient.",
+        tags: ["Web", "App", "Healthcare", "Vibe Coding"],
+        link: "https://github.com/zakariabouchelaghm/Rendez-Vous"
     }
 ];
 

@@ -146,6 +146,14 @@ export const translations = {
         fullDescription: "Hand Count AI is a Desktop application that teaches children counting numbers from 1 to 10 in an interactive and a new way, using a camera an AI as a guide.",
         tags: ["Computer Vision", "Deep Learning", "Android", "App", "Educative", "Children"],
         link: "https://github.com/zakariabouchelaghm/hand_count_app"
+      },
+      {
+        id: 7,
+        title: "Rendez-vous facile",
+        shortDescription: "A website to schedule appointments for doctors and clinics.",
+        fullDescription: "Rendez-vous facile is a website that simplifies the process of scheduling appointments for doctors and clinics. Users can search for doctors by specialty, location, and availability, making healthcare access more convenient and efficient.",
+        tags: ["Web", "App", "Healthcare", "Vibe Coding"],
+        link: "https://github.com/zakariabouchelaghm/Rendez-Vous"
       }
     ],
 
@@ -305,6 +313,14 @@ export const translations = {
         fullDescription: "Hand Count AI est une application de bureau qui enseigne aux enfants à compter de 1 à 10 de manière interactive et nouvelle, en utilisant une caméra et l'IA comme guide.",
         tags: ["Vision par Ordinateur", "Deep Learning", "Android", "Application", "Éducatif", "Enfants"],
         link: "https://github.com/zakariabouchelaghm/hand_count_app"
+      },
+      {
+        id: 7,
+        title: "Rendez-vous facile",
+        shortDescription: "Un site web pour prendre des rendez-vous pour les médecins et les cliniques.",
+        fullDescription: "Rendez-vous facile est un site web qui simplifie le processus de prise de rendez-vous pour les médecins et les cliniques. Les utilisateurs peuvent rechercher des médecins par spécialité, localisation et disponibilité, rendant l'accès aux soins de santé plus pratique et efficace.",
+        tags: ["Web", "Application", "Santé", "Vibe Coding"],
+        link: "https://github.com/zakariabouchelaghm/Rendez-Vous"
       }
     ],
 
